@@ -98,14 +98,12 @@ def isValidNumberString(s):
 
 
 def cosine_distance(instance1, instance2):
-    # Extract numerical features for both instances (skipping labels)
     vector1 = instance1[1:]
     vector2 = instance2[1:]
     return cosine(vector1, vector2)
 
 
 def jaccard_distance(instance1, instance2):
-    # Convert features to sets for Jaccard computation (skip labels)
     vector1 = instance1[1:]
     vector2 = instance2[1:]
     return jaccard(vector1, vector2)
